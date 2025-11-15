@@ -33,13 +33,13 @@ export const Header: FC = () => {
     setAnchorElNav(null);
   };
 
-  const styleBox = {
+  const boxStyle = {
     flexGrow: 1,
     display: { xs: "flex", md: "none" },
     fontSize: "50px",
   };
 
-  const styleButton = {
+  const buttonStyle = {
     my: 2,
     color: "white",
     display: "block",
@@ -47,15 +47,15 @@ export const Header: FC = () => {
     fontWeight: "bold",
   };
 
-  const styleAppBar = {
-    backgroundColor: "green",
+  const appBarStyle = {
+    backgroundColor: "#2196f3",
   };
 
   return (
-    <AppBar style={styleAppBar} position="static">
+    <AppBar style={appBarStyle} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={styleBox}>
+          <Box sx={boxStyle}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -91,14 +91,14 @@ export const Header: FC = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {routes.map((obj) => (
               <Link
                 key={obj.route}
                 style={{ textDecoration: "none", color: "white" }}
                 to={`/${obj.route}`}
               >
-                <Button onClick={handleCloseNavMenu} sx={styleButton}>
+                <Button onClick={handleCloseNavMenu} sx={buttonStyle}>
                   {obj.name}
                 </Button>
               </Link>

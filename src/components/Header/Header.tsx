@@ -10,7 +10,6 @@ import {
   Typography,
 } from "@mui/material";
 import type { FC } from "react";
-import AdbIcon from "@mui/icons-material/Adb";
 import React from "react";
 import { Link } from "react-router-dom";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";

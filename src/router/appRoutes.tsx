@@ -1,8 +1,7 @@
 import type { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import App from "../App";
-import { ProductLanding } from "../components/Product/ProductLanding";
-import { ProductCreate } from "../components/Product";
+import { ProductLanding, ProductCreate } from "../components/Product";
 
 export const AppRoutes: FC = () => {
   return (
